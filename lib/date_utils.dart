@@ -3,7 +3,7 @@ library utils;
 import "package:intl/intl.dart";
 
 class Utils {
-  static final DateFormat _monthFormat = new DateFormat("MMMM yyyy");
+  static final DateFormat _monthFormat = new DateFormat("yyyy MMMM", 'zh');
   static final DateFormat _dayFormat = new DateFormat("dd");
   static final DateFormat _firstDayFormat = new DateFormat("MMM dd");
   static final DateFormat _fullDayFormat = new DateFormat("EEE MMM dd, yyyy");
@@ -16,13 +16,13 @@ class Utils {
   static String apiDayFormat(DateTime d) => _apiDayFormat.format(d);
 
   static const List<String> weekdays = const [
-    "Sun",
-    "Mon",
-    "Tue",
-    "Wed",
-    "Thu",
-    "Fri",
-    "Sat"
+    "日",
+    "一",
+    "二",
+    "三",
+    "四",
+    "五",
+    "六"
   ];
 
   /// The list of days in a given month
